@@ -1,0 +1,104 @@
+include: fedora-common-ostree.yaml
+
+ref: mto-desktop
+
+rojig:
+  name: mto-i3-desktop
+  summary: "MTO I3 Desktop"
+  license: MIT
+
+repos:
+  - fedora-32
+  - fedora-32-updates
+  - rpmfusion-free
+  - rpmfusion-free-updates
+
+packages:
+# hardware/drivers
+  - kernel
+  - kernel-modules-extra
+  - powertop
+  - htop
+  - iwd
+  - NetworkManager-wifi
+  - NetworkManager-openvpn-gnome
+  - udisks2-lvm2
+  - opensc
+  - iwl6000g2a-firmware
+ # basic system
+  - acl
+  - attr
+  - basesystem
+  - cryptsetup
+  - dnsmasq
+  - filesystem
+  - hostname
+  - iproute
+  - kbd
+  - nss-altfiles
+  - pciutils
+  - sudo
+  - usbutils
+# shell tools and development
+  - bc
+  - gnupg2
+  - fpaste
+  - lsof
+  - man-db
+  - mtr
+  - tree
+  - bzip2
+  - zip
+  - unzip
+  - vim-X11
+  - bash-completion
+  - qemu-kvm
+  - qemu-img
+  - openvpn
+  - mutt
+  - nmap-ncat
+  - offlineimap
+  - openssh-server
+  - systemd-container
+  - git
+  - strace
+  - wget
+  - cockpit-system
+  - cockpit-ws
+  - curl
+  - telnet
+# Desktop
+  - xorg-x11-server-Xorg
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-intel
+  - mesa-dri-drivers
+  - lxrandr
+  - lxappearance
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - xorg-x11-server-utils
+  - xorg-x11-utils
+  - xbacklight
+  - i3
+  - i3lock
+  - lxdm
+  - wmctrl
+  - dunst
+  - ranger
+  - gvfs-mtp
+  - pavucontrol
+  - pulseaudio-utils
+  - alsa-plugins-pulseaudio
+  - gstreamer1-plugin-mpg123
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly
+  - gstreamer1-libav
+  - firefox
+  - network-manager-applet
+  - nm-connection-editor
+  - libappindicator-gtk3
+  - syncthing
+  - krb5-workstation
+  
+postprocess-script: mto-i3-post.sh

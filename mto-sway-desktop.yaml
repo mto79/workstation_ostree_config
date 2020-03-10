@@ -1,0 +1,82 @@
+include: fedora-common-ostree.yaml
+
+ref: mto-desktop
+
+rojig:
+  name: mto-i3-desktop
+  summary: "MTO I3 Desktop"
+  license: MIT
+
+repos:
+  - fedora-rawhide
+  - sway-deps
+
+packages:
+# hardware/drivers
+  - kernel
+  - kernel-modules-extra
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - powertop
+  - htop
+ # basic system
+  - acl
+  - attr
+  - basesystem
+  - cryptsetup
+  - dnsmasq
+  - fedora-workstation-backgrounds
+  - filesystem
+  - hostname
+  - iproute
+  - kbd
+  - nss-altfiles
+  - pciutils
+  - sudo
+  - usbutils
+# shell tools and development
+  - ansible
+  - bc
+  - gnupg2
+  - fpaste
+  - lsof
+  - man-db
+  - mtr
+  - tree
+  - bzip2
+  - zip
+  - unzip
+  - vim-enhanced
+  - bash-completion
+  - qemu-kvm
+  - qemu-img
+  - openvpn
+  - mutt
+  - nmap-ncat
+  - offlineimap
+  - openssh-server
+  - git
+  - strace
+  - wget
+  - curl
+  - telnet
+# Desktop 
+  - feh
+  - fira-code-fonts
+  - fontawesome-fonts
+  - powerline-fonts
+  - light
+  - mako 
+  - ncmpcpp 
+  - pavucontrol
+  - ranger 
+  - rofi 
+  - swaylock
+  - termite
+  - waybar
+  - wl-clipboard
+  - mpc
+  - mpd
+  - mpv
+  - grim
+  - slurp

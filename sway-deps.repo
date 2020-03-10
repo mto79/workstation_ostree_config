@@ -1,0 +1,32 @@
+[copr:copr.fedorainfracloud.org:alebastr:waybar]
+name=Copr repo for waybar owned by alebastr
+baseurl=https://copr-be.cloud.fedoraproject.org/results/alebastr/waybar/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/alebastr/waybar/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+
+[copr:copr.fedorainfracloud.org:skidnik:termite]
+name=Copr repo for termite owned by skidnik
+baseurl=https://copr-be.cloud.fedoraproject.org/results/skidnik/termite/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/skidnik/termite/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+
+[copr:copr.fedorainfracloud.org:evana:fira-code-fonts]
+name=Copr repo for fira-code-fonts owned by evana
+baseurl=https://copr-be.cloud.fedoraproject.org/results/evana/fira-code-fonts/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/evana/fira-code-fonts/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
