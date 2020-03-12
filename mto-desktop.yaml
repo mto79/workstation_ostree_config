@@ -1,0 +1,308 @@
+include: fedora-common-ostree.yaml
+
+ref: mto-desktop
+rojig:
+  name: mto-desktop
+  summary: "MTO Desktop"
+  license: MIT
+
+repos:
+  - fedora-31
+  - fedora-31-updates
+  - fedora-31-updates-testing
+  - rpmfusion-free
+  - rpmfusion-free-updates
+
+packages:
+#----- Standard Group Packages -----
+# core
+  - audit
+  - basesystem
+  - bash
+  - coreutils
+  - curl
+  - dhcp-client
+  - dnf
+  - e2fsprogs
+  - filesystem
+  - glibc
+  - hostname
+  - iproute
+  - iputils
+  - kbd
+  - less
+  - man-db
+  - ncurses
+  - openssh-clients
+  - openssh-server
+  - parted
+  - passwd
+  - plymouth
+  - policycoreutils
+  - procps-ng
+  - rootfiles
+  - rpm
+  #- rpmfusion-free-release
+  #- rpmfusion-nonfree-release
+  - selinux-policy-targeted
+  - setup
+  - shadow-utils
+  - sssd-common
+  - sssd-kcm
+  - sudo
+  - systemd
+  - util-linux
+  - vim-minimal
+  - yum
+  - NetworkManager
+  - dnf-plugins-core
+  - dracut-config-rescue
+  - firewalld
+  #- lsvpd
+  #- powerpc-utils
+# standard
+  - abrt-cli
+  - acl
+  - at
+  - attr
+  - bash-completion
+  - bc
+  - bind-utils
+  - bridge-utils
+  - btrfs-progs
+  - bzip2
+  - cifs-utils
+  - cpio
+  - crontabs
+  - cryptsetup
+  - cyrus-sasl-plain
+  - dbus
+  - deltarpm
+  - dos2unix
+  - dosfstools
+  - ed
+  - ethtool
+  #- fedora-release-notes
+  - file
+  - fpaste
+  - fprintd-pam
+  - gnupg2
+  - grubby
+  - hunspell
+  - iptstate
+  - irqbalance
+  - jwhois
+  - logrotate
+  - lsof
+  - mailcap
+  - man-pages
+  - mcelog
+  - mdadm
+  - microcode_ctl
+  - mlocate
+  - mtr
+  #- nano
+  - net-tools
+  - nfs-utils
+  - nmap-ncat
+  - ntfs-3g
+  - ntfsprogs
+  - opensc
+  - pam_krb5
+  - passwdqc
+  - pciutils
+  - pinfo
+  - plymouth
+  - psacct
+  - quota
+  - realmd
+  - rng-tools
+  - rsync
+  - rsyslog
+  - smartmontools
+  - sos
+  - sssd
+  - sudo
+  - symlinks
+  - systemd-udev
+  - tar
+  - tcpdump
+  - telnet
+  - time
+  - traceroute
+  - tree
+  - unzip
+  - usbutils
+  - util-linux-user
+  - vconfig
+  - wget
+  - which
+  - wireless-tools
+  - words
+  - zip
+  - chrony
+# hardware-support
+  - atmel-firmware
+  - b43-fwcutter
+  - b43-openfwwf
+  - ipw2100-firmware
+  - ipw2200-firmware
+  - iwl100-firmware
+  - iwl1000-firmware
+  - iwl105-firmware
+  - iwl135-firmware
+  - iwl2000-firmware
+  - iwl2030-firmware
+  - iwl3160-firmware
+  - iwl3945-firmware
+  - iwl4965-firmware
+  - iwl5000-firmware
+  - iwl5150-firmware
+  - iwl6000-firmware
+  - iwl6000g2a-firmware
+  - iwl6000g2b-firmware
+  - iwl6050-firmware
+  - iwl7260-firmware
+  - libertas-usb8388-firmware
+  - usb_modeswitch
+  - zd1211-firmware
+  - acpi
+  - acpitool
+  - alsa-firmware
+  #- bcm283x-firmware
+  #- broadcom-wl
+  - cmospwd
+  - gpsd
+  - gpsd-clients
+  - hddtemp
+  - hdparm
+  - iscan-firmware
+  - isight-firmware-tools
+  - libifp
+  - liquidio-firmware
+  - lsscsi
+  - multican
+  - netronome-firmware
+  - opensc
+  - pcsc-lite
+  - pcsc-lite-ccid
+  - radeontop
+  - wpan-tools
+  #- intel-media-driver
+  #- libva-vaapi-driver
+# Networkmanager-submodules
+  - NetworkManager-bluetooth
+  - NetworkManager-wifi
+  - NetworkManager-wwan
+  - dhcp-client
+  - dnsmasq
+  - iptables
+# Dial-up
+  #- dial-up
+# Fonts
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - liberation-mono-fonts
+  - liberation-sans-fonts
+  - liberation-serif-fonts
+  - google-noto-emoji-color-fonts
+# Guest Desktop Agents
+  #- hyperv-daemons
+  #- open-vm-tools-desktop
+  - qemu-guest-agent
+  - spice-vdagent
+  #- virtualbox-guest-additions
+# Multimedia
+  - PackageKit-gstreamer-plugin
+  - alsa-plugins-pulseaudio
+  - alsa-ucm
+  - alsa-utils
+  - gstreamer1-libav
+  - gstreamer1-plugins-bad-free
+  - gstreamer1-plugins-bad-freeworld
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly
+  - pulseaudio
+  - pulseaudio-module-x11
+  - pulseaudio-utils
+  - chromium-libs-media-freeworld
+  - ffmpeg-libs
+  - gstreamer-plugins-espeak
+  - qt5-qtwebengine-freeworld
+# Base-x
+  - glx-utils
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
+  - plymouth-system-theme
+  #- xorg-x11-drv-armsoc
+  - xorg-x11-drv-ati
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-libinput
+  - xorg-x11-drv-nouveau
+  #- xorg-x11-drv-omap
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-vesa
+  #- xorg-x11-drv-vmware
+  #- xorg-x11-drv-wacom
+  - xorg-x11-server-Xorg
+  - xorg-x11-utils
+  - xorg-x11-xauth
+  - xorg-x11-xinit
+  - xorg-x11-drv-geode
+#----- Additional Packages -----
+# Kernel
+  - kernel
+  - kernel-modules-extra
+# Icons and Backgrounds
+  - fedora-workstation-backgrounds
+  - fedora-icon-theme
+  - gnome-icon-theme
+  - gnome-icon-theme-extras 
+# I3
+  - i3
+  - i3lock
+  - i3status
+# Utilities
+  - powertop
+  - htop
+  - git
+  - strace
+  - mutt
+  - offlineimap
+  - dunst
+  - ranger
+  - wmctrl
+  - vim-X11
+  #- qemu-kvm
+  #- qemu-img
+  #- systemd-container
+  - lxrandr
+  - lxappearance
+  - xbacklight
+  - gvfs-mtp
+  - firefox
+  - lxpolkit
+  - gtimelog
+  - libappindicator-gtk3
+  - krb5-workstation
+  - nss-altfiles
+# Network
+  - openvpn
+# Hardware/drivers
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - iwd
+  - udisks2-lvm2
+# Multimedia
+  - pavucontrol
+  - gstreamer1-plugin-mpg123
+
+  #add-files:
+#  - ["local-rpms/redhat-internal-cert-install-0.1-7.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-cert-install.rpm"]
+#  - ["local-rpms/redhat-internal-NetworkManager-openvpn-profiles-0.1-29.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-NetworkManager-openvpn-profiles.rpm"]
+
+postprocess-script: mto-post.sh
