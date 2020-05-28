@@ -13,9 +13,9 @@ packages:
   - skopeo
   - toolbox
   # Flatpak support
-  #- flatpak
-  #- flatpak-builder
-  #- xdg-desktop-portal
+  - flatpak
+  - flatpak-builder
+  - xdg-desktop-portal
   # Bundle the minimal -devel packages needed to build a kernel.
   # This is needed because we can't rely on layering to install these
   # due to version conflicts with the base image.

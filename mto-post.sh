@@ -2,8 +2,8 @@
 set -xeuo pipefail
 
 # Install local RPMs
-#rpm -i --verbose /usr/lib/local-rpms/*.rpm
-#rm -rf /usr/lib/local-rpms
+rpm -i --verbose /usr/lib/local-rpms/*.rpm
+rm -rf /usr/lib/local-rpms
 
 # Enable SysRQ
 echo 'kernel.sysrq = 1' > /etc/sysctl.d/90-sysrq.conf
@@ -55,12 +55,3 @@ ln -s /usr/lib/systemd/system/systemd-timesyncd.service /etc/systemd/system/sysi
 
 # avoid LVM spew in /etc
 sed -i 's/backup = 1/backup = 0/; s/archive = 1/archive = 0/' /etc/lvm/lvm.conf
-
-# schroot: use tmpfs for sessions
-#echo 'L+ /var/lib/schroot - - - - /run/schroot' > /usr/lib/tmpfiles.d/0-schroot.conf
-#echo 'd /run/schroot/session 0755 root root' >> /usr/lib/tmpfiles.d/0-schroot.conf
-# schroot: mount home directory
-#echo '/var/home /var/home none rw,bind 0 0' >> /etc/schroot/default/fstab
-
-# select preferred vim version
-ln -sfn vimx /usr/bin/vim

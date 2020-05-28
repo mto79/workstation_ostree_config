@@ -10,9 +10,12 @@ repos:
   - fedora-31
   - fedora-31-updates
   - fedora-31-updates-testing
+  - copr:copr.fedorainfracloud.org:pschyska:alacritty
+  - copr:copr.fedorainfracloud.org:vladius:i3blocks
+  - asbru-cm_asbru-cm
   - rpmfusion-free
   - rpmfusion-free-updates
-
+  
 packages:
 #----- Standard Group Packages -----
 # core
@@ -52,7 +55,7 @@ packages:
   - sudo
   - systemd
   - util-linux
-  - vim-minimal
+  - vim-common
   - yum
   - NetworkManager
   - dnf-plugins-core
@@ -262,29 +265,35 @@ packages:
   - fedora-icon-theme
   - gnome-icon-theme
   - gnome-icon-theme-extras 
-# I3
+# Utilities
   - i3
   - i3lock
   - i3status
-# Utilities
+  - i3blocks
+  #- rofi
+  - dunst
+  - feh
+  - alacritty
   - powertop
   - htop
   - git
   - strace
   - mutt
   - offlineimap
-  - dunst
+  - fzf
+  - ripgrep
   - ranger
   - wmctrl
   - vim-X11
-  #- qemu-kvm
-  #- qemu-img
-  #- systemd-container
+  - vim-enhanced
+  - systemd-container
   - lxrandr
   - lxappearance
   - xbacklight
   - gvfs-mtp
   - firefox
+  - asbru-cm
+  - pass 
   - lxpolkit
   - gtimelog
   - libappindicator-gtk3
@@ -292,6 +301,17 @@ packages:
   - nss-altfiles
 # Network
   - openvpn
+  - NetworkManager-openvpn-gnome
+  - network-manager-applet
+  - nm-connection-editor
+# Virtualization
+  - qemu-kvm
+  - qemu-img
+  - libvirt 
+  - virt-install
+  - virt-manager
+  - virt-top 
+  - libguestfs-tools 
 # Hardware/drivers
   - sane-backends
   - sane-backends-drivers-scanners
@@ -300,9 +320,12 @@ packages:
 # Multimedia
   - pavucontrol
   - gstreamer1-plugin-mpg123
-
-  #add-files:
-#  - ["local-rpms/redhat-internal-cert-install-0.1-7.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-cert-install.rpm"]
+# shell
+  - fish
+  - powerline-fonts
+  - fontawesome-fonts
+add-files:
+  - ["local-rpms/chezmoi-1.8.1-x86_64.rpm", "/usr/lib/local-rpms/chezmoi-1.8.1-x86_64.rpm"]
 #  - ["local-rpms/redhat-internal-NetworkManager-openvpn-profiles-0.1-29.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-NetworkManager-openvpn-profiles.rpm"]
 
 postprocess-script: mto-post.sh
