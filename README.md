@@ -71,3 +71,6 @@ Future work
 
  - GNOME Software support for both rpm-ostree/flatpak and possibly docker
  - automated tests that run on this content
+
+After install
+-----------

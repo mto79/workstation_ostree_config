@@ -10,8 +10,8 @@ repos:
   - fedora-31
   - fedora-31-updates
   - fedora-31-updates-testing
-  - copr:copr.fedorainfracloud.org:pschyska:alacritty
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
+  - copr:copr.fedorainfracloud.org:mhartgring:rofi
   - asbru-cm_asbru-cm
   - rpmfusion-free
   - rpmfusion-free-updates
@@ -270,10 +270,9 @@ packages:
   - i3lock
   - i3status
   - i3blocks
-  #- rofi
+  - rofi
   - dunst
   - feh
-  - alacritty
   - powertop
   - htop
   - git
@@ -292,13 +291,18 @@ packages:
   - xbacklight
   - gvfs-mtp
   - firefox
+  - freerdp
+  - rdesktop
   - asbru-cm
+  - hugo
   - pass 
   - lxpolkit
   - gtimelog
   - libappindicator-gtk3
   - krb5-workstation
   - nss-altfiles
+  - rxvt-unicode-256color-ml
+  - sysstat
 # Network
   - openvpn
   - NetworkManager-openvpn-gnome
@@ -321,7 +325,9 @@ packages:
   - pavucontrol
   - gstreamer1-plugin-mpg123
 # shell
+  - tmux
   - fish
+  - powerline
   - powerline-fonts
   - fontawesome-fonts
 add-files:
