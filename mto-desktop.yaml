@@ -273,6 +273,7 @@ packages:
   - rofi
   - dunst
   - feh
+  - compton
   - powertop
   - htop
   - git
