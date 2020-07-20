@@ -1,9 +1,7 @@
 Startup
 ----------------
 cd $HOME  
-mkdir workstation_ostree_config  
-cd workstation_ostree_config  
-git clone https://github.com/mto79/workstation_ostree_config.git  
+git clone https://github.com/mto79/workstation_ostree_config.git workstation_ostree_config 
 ./compose.sh    
 
 
