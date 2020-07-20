@@ -5,6 +5,7 @@ CACHE=$HOME/workstation_ostree_config/cache/ostree
 REPO=$HOME/workstation_ostree_config/repo
 
 mkdir -p $CACHE
+mkdir -p $REPO
 
 #rm -Rf /share/* #test vm
 rm -Rf $CACHE/*
