@@ -1,6 +1,8 @@
 #!/bin/sh
 set -eu
 
+chsh -s /bin/bash
+
 CACHE=/var/home/mto/workstation_ostree_config/cache/ostree
 REPO=/var/home/mto/workstation_ostree_config/repo
 
@@ -16,5 +18,9 @@ if [ ! -d $REPO/objects ]; then
 fi
 
 rpm-ostree compose tree --cachedir=$CACHE --repo=$REPO mto-desktop.yaml
+
+ostree remote add workstation file:///$REPO --no-gpg-verify
+
+rpm-ostree rebase workstation:mto-deskop
 
 #cp -Rfp $REPO/* /share #test vm
