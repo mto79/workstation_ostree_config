@@ -1,7 +1,10 @@
 #!/bin/sh
 set -eu
-CACHE=/home/mto/Development/MTO/workstation_ostree_config/cache/ostree
-REPO=/home/mto/Development/MTO/workstation_ostree_config/repo
+
+
+
+CACHE=/home/mto/Development/workstation_ostree_config/cache/ostree
+REPO=/home/mto/Development/workstation_ostree_config/repo
 
 mkdir -p $CACHE
 
