@@ -13,7 +13,7 @@ hostnamectl set-hostname [notus|boreas|zephyrus|eurus]
 OSTREE
 =======
 sudo ostree remote add workstation file:///var/home/mto/workstation_ostree_config/repo --no-gpg-verify
-sudo rpm-ostree rebase workstation:mto-deskop
+sudo rpm-ostree rebase workstation:mto-desktop
 systemctl reboot
 
 CHEZMOI

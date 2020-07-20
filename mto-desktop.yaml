@@ -95,6 +95,7 @@ packages:
   - iptstate
   - irqbalance
   - jwhois
+  - libappindicator-sharp
   - logrotate
   - lsof
   - mailcap
@@ -102,6 +103,7 @@ packages:
   - mcelog
   - mdadm
   - microcode_ctl
+  - mono-devel
   - mlocate
   - mtr
   #- nano

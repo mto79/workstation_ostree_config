@@ -19,6 +19,10 @@ rpm-ostree compose tree --cachedir=$CACHE --repo=$REPO mto-desktop.yaml
 
 ostree remote add workstation file:///$REPO --no-gpg-verify
 
-rpm-ostree rebase workstation:mto-deskop
+rpm-ostree rebase workstation:mto-desktop
+
+chezmoi init --apply --verbose https://github.com/mto79/dotfiles.git
+
+
 
 #cp -Rfp $REPO/* /share #test vm
