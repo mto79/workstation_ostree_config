@@ -1,8 +1,6 @@
 #!/bin/sh
 set -eu
 
-chsh -s /bin/bash
-
 CACHE=/var/home/mto/workstation_ostree_config/cache/ostree
 REPO=/var/home/mto/workstation_ostree_config/repo
 
