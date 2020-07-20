@@ -1,8 +1,8 @@
 #!/bin/sh
 set -eu
 
-CACHE=$HOME/workstation_ostree_config/cache/ostree
-REPO=$HOME/workstation_ostree_config/repo
+CACHE=/var/home/mto/workstation_ostree_config/cache/ostree
+REPO=/var/home/mto/workstation_ostree_config/repo
 
 mkdir -p $CACHE
 mkdir -p $REPO
