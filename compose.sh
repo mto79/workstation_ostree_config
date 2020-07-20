@@ -1,7 +1,8 @@
 #!/bin/sh
 set -eu
-CACHE=/home/mto/Data/MTO/Development/workstation_ostree_config/cache/ostree
-REPO=/home/mto/Data/MTO/Development/workstation_ostree_config/repo
+
+CACHE=$HOME/workstation_ostree_config/cache/ostree
+REPO=$HOME/workstation_ostree_config/repo
 
 mkdir -p $CACHE
 
@@ -15,4 +16,4 @@ fi
 
 rpm-ostree compose tree --cachedir=$CACHE --repo=$REPO mto-desktop.yaml
 
-#cp -Rfp $REPO/* /share
+#cp -Rfp $REPO/* /share #test vm

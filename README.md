@@ -1,3 +1,13 @@
+Startup
+----------------
+cd $HOME  
+mkdir workstation_ostree_config  
+cd workstation_ostree_config  
+git clone https://github.com/mto79/workstation_ostree_config.git  
+./compose.sh    
+
+
+
 For some background, see:
 
  - https://fedoraproject.org/wiki/Workstation/AtomicWorkstation
