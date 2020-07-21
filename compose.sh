@@ -7,7 +7,6 @@ REPO=/var/home/mto/workstation_ostree_config/repo
 mkdir -p $CACHE
 mkdir -p $REPO
 
-#rm -Rf /share/* #test vm
 rm -Rf $CACHE/*
 rm -Rf $REPO/*
 
@@ -19,9 +18,7 @@ rpm-ostree compose tree --cachedir=$CACHE --repo=$REPO mto-desktop.yaml
 
 ostree remote add workstation file:///$REPO --no-gpg-verify
 
-rpm-ostree rebase workstation:mto-desktop
-rpm-ostree upgrade
-
-systemctl reboot
-
-#cp -Rfp $REPO/* /share #test vm
+if [[ ! -e /etc/ostree/remotes.d/workstation.conf ]]; then
+    rpm-ostree rebase workstation:mto-desktop
+    rpm-ostree upgrade
+fi
