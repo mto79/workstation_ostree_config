@@ -5,7 +5,7 @@ set -xeuo pipefail
 rpm -i --verbose /usr/lib/local-rpms/*.rpm
 rm -rf /usr/lib/local-rpms
 
-cat <<EOF > /etc/mto.conf
+cat <<EOF > /var/home/mto/setup.txt
 HOSTNAME
 =======
 hostnamectl set-hostname [notus|boreas|zephyrus|eurus]
