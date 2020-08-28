@@ -16,9 +16,3 @@ fi
 
 rpm-ostree compose tree --cachedir=$CACHE --repo=$REPO mto-desktop.yaml
 
-ostree remote add workstation file:///$REPO --no-gpg-verify
-
-if [[ ! -e /etc/ostree/remotes.d/workstation.conf ]]; then
-    rpm-ostree rebase workstation:mto-desktop
-    rpm-ostree upgrade
-fi

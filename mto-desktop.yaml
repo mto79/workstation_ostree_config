@@ -217,6 +217,7 @@ packages:
   #- open-vm-tools-desktop
   - qemu-guest-agent
   - spice-vdagent
+  - virt-viewer
   #- virtualbox-guest-additions
 # Multimedia
   - PackageKit-gstreamer-plugin
@@ -231,6 +232,7 @@ packages:
   - pulseaudio
   - pulseaudio-module-x11
   - pulseaudio-utils
+  - pulseaudio-module-bluetooth
   - chromium-libs-media-freeworld
   - ffmpeg-libs
   - gstreamer-plugins-espeak
