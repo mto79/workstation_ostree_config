@@ -217,7 +217,6 @@ packages:
   #- open-vm-tools-desktop
   - qemu-guest-agent
   - spice-vdagent
-  - virt-viewer
   #- virtualbox-guest-additions
 # Multimedia
   - PackageKit-gstreamer-plugin
@@ -294,6 +293,7 @@ packages:
   - systemd-container
   - lxrandr
   - lxappearance
+  - light
   - xbacklight
   - gvfs-mtp
   - firefox
@@ -301,7 +301,8 @@ packages:
   - rdesktop
   - asbru-cm
   - hugo
-  - pass 
+  - pass
+  - kpcli 
   - lxpolkit
   - gtimelog
   - libappindicator-gtk3
@@ -321,6 +322,7 @@ packages:
   - virt-install
   - virt-manager
   - virt-top 
+  - virt-viewer
   - libguestfs-tools 
 # Hardware/drivers
   - sane-backends
