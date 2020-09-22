@@ -341,6 +341,5 @@ packages:
 add-files:
   - ["local-rpms/chezmoi-1.8.1-x86_64.rpm", "/usr/lib/local-rpms/chezmoi-1.8.1-x86_64.rpm"]
   - ["local-rpms/duplicati-2.0.5.1-2.0.5.1_beta_20200118.noarch.rpm", "/usr/lib/local-rpms/duplicati-2.0.5.1-2.0.5.1_beta_20200118.noarch.rpm"]
-#  - ["local-rpms/redhat-internal-NetworkManager-openvpn-profiles-0.1-29.el7.csb.noarch.rpm", "/usr/lib/local-rpms/redhat-internal-NetworkManager-openvpn-profiles.rpm"]
 
 postprocess-script: mto-post.sh
