@@ -1,42 +1,34 @@
-Startup
+WORKSTATION_OSTREE_CONFIG
 ----------------
-cd $HOME  
-git clone https://github.com/mto79/workstation_ostree_config.git workstation_ostree_config 
-./compose.sh    
 
+This project is my custom workstation setup based on the immutuble OS Fedora Silverblue
 
-
-For some background, see:
-
- - https://fedoraproject.org/wiki/Workstation/AtomicWorkstation
- - https://fedoraproject.org/wiki/Changes/WorkstationOstree
- 
-(Note also this repo obsoletes https://pagure.io/atomic-ws)
-
-High level design
+Purpose
 -----------------
 
-The goal of the system is to be a workstation, using
-rpm-ostree for the base OS, and a combination of
-Docker and Flatpak containers, as well as virtualization
-tools such as Vagrant.
+The goal of the system is to be a workstation, using rpm-ostree for the base OS, and a combination of Docker and Flatpak containers, as well as virtualization tools such as Vagrant.
 
 Status
 ------
 
-This project is actively maintained and is ready for use
-by sophisticated and interested users, but not ready
-for widespread promotion.
-
-See some [https://lists.fedoraproject.org/archives/list/desktop@lists.fedoraproject.org/thread/J6BJS7Z4NKNOQUZWGYXZZIEKYMWBBSUY/](discussion about the first release).
+This project is personal and for testing purposes but can be an inspiration for someone.
+USE AT YOUR OWN RISK!
 
 Installing
 ------------
 
-See the Silverblue documentation at
-https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-guide/.
-There's also a guide for installing inside an existing system:
-https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-dual-boot/.
+Install Fedora Silverblue on a laptop machine.
+1. Download a Silverblue image from [https://silverblue.fedoraproject.org/download](https://silverblue.fedoraproject.org/download)
+2. Install on bare system or on a virtual machine
+3. Choose default layout for disk but make sure it is encrypted
+4. Make a default home user (in my case mto)  
+5. Boot and login
+6. cd $HOME
+7. git clone https://github.com/mto79/workstation_ostree_config.git workstation_ostree_config 
+8. cd $HOME/workstation_ostree_config 
+9. ./compose.sh 
+
+See the Silverblue [documentation](https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-guide/.)
 
 Important issues:
 -----------------------
@@ -82,3 +74,4 @@ Future work
 
 After install
 -----------
+Run setup script ./$HOME/workstation_ostree_config/mto-setup.sh

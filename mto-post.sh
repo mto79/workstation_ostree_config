@@ -5,23 +5,6 @@ set -xeuo pipefail
 rpm -i --verbose /usr/lib/local-rpms/*.rpm
 rm -rf /usr/lib/local-rpms
 
-cat <<EOF > /etc/mto.conf
-HOSTNAME
-=======
-hostnamectl set-hostname [notus|boreas|zephyrus|eurus]
-
-OSTREE
-=======
-sudo ostree remote add workstation file:///var/home/mto/workstation_ostree_config/repo --no-gpg-verify
-sudo rpm-ostree rebase workstation:mto-desktop
-systemctl reboot
-
-CHEZMOI
-=======
-chezmoi init --apply --verbose https://github.com/mto79/dotfiles.git
-
-EOF
-
 # Enable SysRQ
 echo 'kernel.sysrq = 1' > /etc/sysctl.d/90-sysrq.conf
 
