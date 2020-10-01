@@ -29,6 +29,8 @@ echo "Set certificates for duplicati mono (can only be done with flag --user)"
 echo ""
 cert-sync --user /etc/pki/tls/certs/ca-bundle.crt
 
+echo ""
+
 echo "Flatpak installation"
 echo ""
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

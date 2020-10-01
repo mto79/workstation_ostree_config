@@ -236,6 +236,7 @@ packages:
   - ffmpeg-libs
   - gstreamer-plugins-espeak
   - qt5-qtwebengine-freeworld
+  - mozilla-openh264
 # Base-x
   - glx-utils
   - mesa-dri-drivers
@@ -297,6 +298,7 @@ packages:
   - xbacklight
   - gvfs-mtp
   - firefox
+  - java-openjdk-latest
   - freerdp
   - rdesktop
   - asbru-cm
@@ -323,7 +325,8 @@ packages:
   - virt-manager
   - virt-top 
   - virt-viewer
-  - libguestfs-tools 
+  - libguestfs-tools
+  - vagrant-libvirt 
 # Hardware/drivers
   - sane-backends
   - sane-backends-drivers-scanners
