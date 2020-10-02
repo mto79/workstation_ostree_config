@@ -15,7 +15,11 @@ repos:
   - asbru-cm_asbru-cm
   - rpmfusion-free
   - rpmfusion-free-updates
-  
+  - rpmfusion-nonfree
+  - rpmfusion-nonfree-updates
+  - fedora-cisco-openh264
+  - fedora-cisco-openh264-debuginfo
+
 packages:
 #----- Standard Group Packages -----
 # core
@@ -236,6 +240,7 @@ packages:
   - ffmpeg-libs
   - gstreamer-plugins-espeak
   - qt5-qtwebengine-freeworld
+  - gstreamer1-plugin-openh264
   - mozilla-openh264
 # Base-x
   - glx-utils
@@ -298,7 +303,7 @@ packages:
   - xbacklight
   - gvfs-mtp
   - firefox
-  - java-openjdk-latest
+  - java-latest-openjdk
   - freerdp
   - rdesktop
   - asbru-cm
