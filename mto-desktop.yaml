@@ -19,6 +19,7 @@ repos:
   - rpmfusion-nonfree-updates
   - fedora-cisco-openh264
   - fedora-cisco-openh264-debuginfo
+  - code 
 
 packages:
 #----- Standard Group Packages -----
@@ -317,6 +318,8 @@ packages:
   - nss-altfiles
   - rxvt-unicode-256color-ml
   - sysstat
+  - code
+  - pandoc
 # Network
   - openvpn
   - NetworkManager-openvpn-gnome
