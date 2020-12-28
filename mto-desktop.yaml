@@ -182,8 +182,8 @@ packages:
   #- bcm283x-firmware
   #- broadcom-wl
   - cmospwd
-  - gpsd
-  - gpsd-clients
+  #- gpsd
+  #- gpsd-clients
   - hddtemp
   - hdparm
   - iscan-firmware
@@ -319,8 +319,7 @@ packages:
   - rxvt-unicode-256color-ml
   - sysstat
   - code
-  - pandoc
-  - texlive-latex
+  - hplip
 # Network
   - openvpn
   - NetworkManager-openvpn-gnome
@@ -336,22 +335,30 @@ packages:
   - virt-viewer
   - libguestfs-tools
   - vagrant-libvirt 
-# Hardware/drivers
+# Webcam (logitech c920)
+  - v4l-utils
+  - v4l2ucp
+# Printer (hp officejet 250 mobile)
+  - hplip
+  - hplip-gui
   - sane-backends
   - sane-backends-drivers-scanners
+# Wifi 
   - iwd
+# Disk 
   - udisks2-lvm2
 # Multimedia
   - pavucontrol
   - gstreamer1-plugin-mpg123
-# shell
+# Shell
   - tmux
   - fish
   - powerline
   - powerline-fonts
   - fontawesome-fonts
 add-files:
-  - ["local-rpms/chezmoi-1.8.1-x86_64.rpm", "/usr/lib/local-rpms/chezmoi-1.8.1-x86_64.rpm"]
+  - ["local-rpms/chezmoi-1.8.10-x86_64.rpm", "/usr/lib/local-rpms/chezmoi-1.8.10-x86_64.rpm"]
   - ["local-rpms/duplicati-2.0.5.1-2.0.5.1_beta_20200118.noarch.rpm", "/usr/lib/local-rpms/duplicati-2.0.5.1-2.0.5.1_beta_20200118.noarch.rpm"]
+  - ["local-rpms/google-chrome-stable_current_x86_64.rpm", "google-chrome-stable_current_x86_64.rpm"]
 
 postprocess-script: mto-post.sh
