@@ -11,7 +11,6 @@ repos:
   - fedora-31-updates
   - fedora-31-updates-testing
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
-  - copr:copr.fedorainfracloud.org:mhartgring:rofi
   - asbru-cm_asbru-cm
   - rpmfusion-free
   - rpmfusion-free-updates
@@ -319,7 +318,7 @@ packages:
   - rxvt-unicode-256color-ml
   - sysstat
   - code
-  - hplip
+  - chromium
 # Network
   - openvpn
   - NetworkManager-openvpn-gnome
@@ -359,6 +358,5 @@ packages:
 add-files:
   - ["local-rpms/chezmoi-1.8.10-x86_64.rpm", "/usr/lib/local-rpms/chezmoi-1.8.10-x86_64.rpm"]
   - ["local-rpms/duplicati-2.0.5.1-2.0.5.1_beta_20200118.noarch.rpm", "/usr/lib/local-rpms/duplicati-2.0.5.1-2.0.5.1_beta_20200118.noarch.rpm"]
-  - ["local-rpms/google-chrome-stable_current_x86_64.rpm", "google-chrome-stable_current_x86_64.rpm"]
 
 postprocess-script: mto-post.sh
